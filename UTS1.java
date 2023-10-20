@@ -22,11 +22,12 @@ public class UTS1 {
             System.out.println();
             System.out.print("How many programming languages did you master ? : ");
             int language = sc.nextInt();
+            sc.nextLine();
 
             for (int i = 1; i <= language; i++) {
 
                 System.out.print("Enter your programming language : ");
-                languageName = sc.next();
+                languageName = sc.nextLine();
             }
             if (language < 3) {
                 System.out.println("You are not eligible for the job");
@@ -34,19 +35,20 @@ public class UTS1 {
             } else {
                 System.out.println();
                 System.out.print("What is your degree in? : ");
-                String degree = sc.next();
+                String degree = sc.nextLine();
 
                 if (degree.equals("D4") || degree.equals("S1")) {
                     System.out.println("What program in college do you study in? : ");
-                    String program = sc.next();
+                    String program = sc.nextLine();
 
-                    if (program.equalsIgnoreCase("TeknikInformatika")
-                            || program.equalsIgnoreCase("RekayasaPerangkatLunak")
-                            || program.equalsIgnoreCase("IlmuKomputer")
-                            || program.equalsIgnoreCase("SistemInformasi")) {
+                    if (program.equalsIgnoreCase("Teknik Informatika")
+                            || program.equalsIgnoreCase("Rekayasa Perangkat Lunak")
+                            || program.equalsIgnoreCase("Ilmu Komputer")
+                            || program.equalsIgnoreCase("Sistem Informasi")) {
 
                         System.out.println("How many work experience do you have? (Months): ");
                         int experience = sc.nextInt();
+                        sc.nextLine();
 
                         if (experience >= 12) {
                             System.out.println();
